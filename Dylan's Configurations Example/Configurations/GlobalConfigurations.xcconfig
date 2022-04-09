@@ -1,0 +1,15 @@
+//
+//  GlobalConfigurations.xcconfig
+//  Dylan's Configurations Example
+//
+//  Created by Difeng Chen on 4/8/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+/// Version for the App (should match App Store Version)
+MARKETING_VERSION = 1.0.0
+
+/// Platform Build Number
+PLATFORM_BUILD_NUMBER = 1

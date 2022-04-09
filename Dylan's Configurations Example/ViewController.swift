@@ -8,12 +8,30 @@
 import UIKit
 
 class ViewController: UIViewController {
+    // MARK: - Views
+
+    private lazy var urlLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = configuration.apiURL
+        return label
+    }()
+
+    // MARK: - Properties
+
+    private let configuration = ConfigurationsManager()
+
+    // MARK: - Lifecycles
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        view.addSubview(urlLabel)
+
+        NSLayoutConstraint.activate([
+            urlLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            urlLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
     }
-
-
 }
 

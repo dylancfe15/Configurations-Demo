@@ -1,0 +1,20 @@
+//
+//  ProductionConfigurations.xcconfig
+//  Dylan's Configurations Example
+//
+//  Created by Difeng Chen on 4/8/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Dylan's Configurations Example/Configurations/GlobalConfigurations.xcconfig"
+
+// Bundle id
+PRODUCT_BUNDLE_IDENTIFIER = Dylan-Chen.Dylan-s-Configurations-Example
+
+/// Display name used under app's icon
+DISPLAY_NAME = Dylan's Configurations Demo
+
+// URL to the API requests
+API_URL = www.thisisaproductionurl.com

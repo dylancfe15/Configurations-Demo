@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D535E9BC2801403500A5652B /* ConfigurationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D535E9BB2801403500A5652B /* ConfigurationsManager.swift */; };
+		D535E9BF280143AA00A5652B /* GoogleService-Info-Production.plist in Resources */ = {isa = PBXBuildFile; fileRef = D535E9BE280143AA00A5652B /* GoogleService-Info-Production.plist */; };
+		D535E9C22801451200A5652B /* GoogleService-Info-Development.plist in Resources */ = {isa = PBXBuildFile; fileRef = D535E9C12801451200A5652B /* GoogleService-Info-Development.plist */; };
 		D5BC8109280139CB00CD3336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BC8108280139CB00CD3336 /* AppDelegate.swift */; };
 		D5BC810B280139CB00CD3336 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BC810A280139CB00CD3336 /* SceneDelegate.swift */; };
 		D5BC810D280139CB00CD3336 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BC810C280139CB00CD3336 /* ViewController.swift */; };
@@ -16,7 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D5BC8105280139CB00CD3336 /* Dylan's Configurations Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dylan's Configurations Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D535E9BB2801403500A5652B /* ConfigurationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationsManager.swift; sourceTree = "<group>"; };
+		D535E9BE280143AA00A5652B /* GoogleService-Info-Production.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Production.plist"; sourceTree = "<group>"; };
+		D535E9C12801451200A5652B /* GoogleService-Info-Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Development.plist"; sourceTree = "<group>"; };
+		D5BC8105280139CB00CD3336 /* Dylan's Configurations Demo Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dylan's Configurations Demo Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5BC8108280139CB00CD3336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5BC810A280139CB00CD3336 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D5BC810C280139CB00CD3336 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +30,9 @@
 		D5BC8111280139CC00CD3336 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5BC8114280139CC00CD3336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5BC8116280139CC00CD3336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5BC811D28013A1D00CD3336 /* GlobalConfigurations.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = GlobalConfigurations.xcconfig; sourceTree = "<group>"; };
+		D5BC811E28013A9100CD3336 /* ProductionConfigurations.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ProductionConfigurations.xcconfig; sourceTree = "<group>"; };
+		D5BC811F28013B8100CD3336 /* DevelopmentConfigurations.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DevelopmentConfigurations.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +46,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D535E9BA2801401D00A5652B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D535E9BB2801403500A5652B /* ConfigurationsManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		D535E9BD2801435D00A5652B /* GoogleServices */ = {
+			isa = PBXGroup;
+			children = (
+				D535E9BE280143AA00A5652B /* GoogleService-Info-Production.plist */,
+				D535E9C12801451200A5652B /* GoogleService-Info-Development.plist */,
+			);
+			path = GoogleServices;
+			sourceTree = "<group>";
+		};
 		D5BC80FC280139CB00CD3336 = {
 			isa = PBXGroup;
 			children = (
@@ -48,7 +74,7 @@
 		D5BC8106280139CB00CD3336 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D5BC8105280139CB00CD3336 /* Dylan's Configurations Example.app */,
+				D5BC8105280139CB00CD3336 /* Dylan's Configurations Demo Dev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +82,8 @@
 		D5BC8107280139CB00CD3336 /* Dylan's Configurations Example */ = {
 			isa = PBXGroup;
 			children = (
+				D5BC811C280139DE00CD3336 /* Configurations */,
+				D535E9BA2801401D00A5652B /* Managers */,
 				D5BC8108280139CB00CD3336 /* AppDelegate.swift */,
 				D5BC810A280139CB00CD3336 /* SceneDelegate.swift */,
 				D5BC810C280139CB00CD3336 /* ViewController.swift */,
@@ -65,6 +93,17 @@
 				D5BC8116280139CC00CD3336 /* Info.plist */,
 			);
 			path = "Dylan's Configurations Example";
+			sourceTree = "<group>";
+		};
+		D5BC811C280139DE00CD3336 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				D535E9BD2801435D00A5652B /* GoogleServices */,
+				D5BC811D28013A1D00CD3336 /* GlobalConfigurations.xcconfig */,
+				D5BC811E28013A9100CD3336 /* ProductionConfigurations.xcconfig */,
+				D5BC811F28013B8100CD3336 /* DevelopmentConfigurations.xcconfig */,
+			);
+			path = Configurations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +116,7 @@
 				D5BC8101280139CB00CD3336 /* Sources */,
 				D5BC8102280139CB00CD3336 /* Frameworks */,
 				D5BC8103280139CB00CD3336 /* Resources */,
+				D535E9C02801444800A5652B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -84,7 +124,7 @@
 			);
 			name = "Dylan's Configurations Example";
 			productName = "Dylan's Configurations Example";
-			productReference = D5BC8105280139CB00CD3336 /* Dylan's Configurations Example.app */;
+			productReference = D5BC8105280139CB00CD3336 /* Dylan's Configurations Demo Dev.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -126,6 +166,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5BC8115280139CC00CD3336 /* LaunchScreen.storyboard in Resources */,
+				D535E9BF280143AA00A5652B /* GoogleService-Info-Production.plist in Resources */,
+				D535E9C22801451200A5652B /* GoogleService-Info-Development.plist in Resources */,
 				D5BC8112280139CC00CD3336 /* Assets.xcassets in Resources */,
 				D5BC8110280139CB00CD3336 /* Main.storyboard in Resources */,
 			);
@@ -133,11 +175,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D535E9C02801444800A5652B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nPATH_TO_GOOGLE_PLISTS=\"${PROJECT_DIR}/Dylan's Configurations Example/Configurations/GoogleServices\"\n\ncase \"${CONFIGURATION}\" in\n\n\"Debug Development\" | \"Release Development\" )\ncp -r \"$PATH_TO_GOOGLE_PLISTS/GoogleService-Info-Development.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\" ;;\n\n\"Debug Production\" | \"Release Production\" )\ncp -r \"$PATH_TO_GOOGLE_PLISTS/GoogleService-Info-Production.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\" ;;\n\n*)\n;;\nesac\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D5BC8101280139CB00CD3336 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D535E9BC2801403500A5652B /* ConfigurationsManager.swift in Sources */,
 				D5BC810D280139CB00CD3336 /* ViewController.swift in Sources */,
 				D5BC8109280139CB00CD3336 /* AppDelegate.swift in Sources */,
 				D5BC810B280139CB00CD3336 /* SceneDelegate.swift in Sources */,
@@ -166,7 +229,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D5BC8117280139CC00CD3336 /* Debug */ = {
+		D5BC8117280139CC00CD3336 /* Debug Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -225,9 +288,9 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = "Debug Development";
 		};
-		D5BC8118280139CC00CD3336 /* Release */ = {
+		D5BC8118280139CC00CD3336 /* Release Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,15 +343,16 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = "Release Development";
 		};
-		D5BC811A280139CC00CD3336 /* Debug */ = {
+		D5BC811A280139CC00CD3336 /* Debug Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5BC811F28013B8100CD3336 /* DevelopmentConfigurations.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "$(PLATFORM_BUILD_NUMBER)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Dylan's Configurations Example/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -300,22 +364,23 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Dylan-Chen.Dylan-s-Configurations-Example";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = "$(MARKETING_VERSION)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = "$(DISPLAY_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = "Debug Development";
 		};
-		D5BC811B280139CC00CD3336 /* Release */ = {
+		D5BC811B280139CC00CD3336 /* Release Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5BC811F28013B8100CD3336 /* DevelopmentConfigurations.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "$(PLATFORM_BUILD_NUMBER)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Dylan's Configurations Example/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -327,14 +392,186 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Dylan-Chen.Dylan-s-Configurations-Example";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = "$(MARKETING_VERSION)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = "$(DISPLAY_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Release;
+			name = "Release Development";
+		};
+		D5BC812028013C6E00CD3336 /* Debug Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug Production";
+		};
+		D5BC812128013C6E00CD3336 /* Debug Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5BC811E28013A9100CD3336 /* ProductionConfigurations.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "$(PLATFORM_BUILD_NUMBER)";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Dylan's Configurations Example/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = "$(MARKETING_VERSION)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = "$(DISPLAY_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug Production";
+		};
+		D5BC812228013C7900CD3336 /* Release Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release Production";
+		};
+		D5BC812328013C7900CD3336 /* Release Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5BC811E28013A9100CD3336 /* ProductionConfigurations.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "$(PLATFORM_BUILD_NUMBER)";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Dylan's Configurations Example/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = "$(MARKETING_VERSION)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = "$(DISPLAY_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release Production";
 		};
 /* End XCBuildConfiguration section */
 
@@ -342,20 +579,24 @@
 		D5BC8100280139CB00CD3336 /* Build configuration list for PBXProject "Dylan's Configurations Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D5BC8117280139CC00CD3336 /* Debug */,
-				D5BC8118280139CC00CD3336 /* Release */,
+				D5BC8117280139CC00CD3336 /* Debug Development */,
+				D5BC812028013C6E00CD3336 /* Debug Production */,
+				D5BC8118280139CC00CD3336 /* Release Development */,
+				D5BC812228013C7900CD3336 /* Release Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release Development";
 		};
 		D5BC8119280139CC00CD3336 /* Build configuration list for PBXNativeTarget "Dylan's Configurations Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D5BC811A280139CC00CD3336 /* Debug */,
-				D5BC811B280139CC00CD3336 /* Release */,
+				D5BC811A280139CC00CD3336 /* Debug Development */,
+				D5BC812128013C6E00CD3336 /* Debug Production */,
+				D5BC811B280139CC00CD3336 /* Release Development */,
+				D5BC812328013C7900CD3336 /* Release Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release Development";
 		};
 /* End XCConfigurationList section */
 	};
